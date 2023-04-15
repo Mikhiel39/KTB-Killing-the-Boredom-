@@ -92,9 +92,13 @@ body{
     top: 50%;
     left: 30%;
   }
-  a {
+   a {
     text-decoration: none;
-    color: rgba(255,255,255,0.8);
+    color: #1d31a3;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: none;
   }
 .info_box{
     width: 540px;
@@ -107,7 +111,7 @@ body{
     pointer-events: none;
     transition: all 0.3s ease;
     position: absolute;
-    top:70%;
+    top:50%;
     left: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -168,7 +172,7 @@ body{
     pointer-events: none;
     transition: all 0.3s ease;
     position: absolute;
-    top:115%;
+    top:50%;
     left: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -361,7 +365,7 @@ footer button.show{
     pointer-events: none;
     transition: all 0.3s ease;
     position: absolute;
-    top:70%;
+    top:50%;
     left: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
