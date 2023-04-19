@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>KTB-Memes</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!-- Toolbar -->
+	<nav class="toolbar">
+		<div class="logo">
+			<a href="../index.html">
+				<img src="./image/frame.png" alt="KTB Logo" />
+				<span class="title">KTB</span>
+			</a>
+		</div>
+		<ul class="toolbar-right">
+			<li class="download-btn">
+				<a href="#" class="img-download" download>Download
+					<i class="fa fa-download"></i>
+				</a>
+			</li>
+			<!-- <li class="share-btn">
+				<a href="#">Share
+					<i class="fa fa-share-alt"></i>
+					<i class="fa fa-whatsapp"></i>
+					<i class="fa fa-facebook"></i>
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-twitter"></i>
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li> -->
+		</ul>
+	</nav>
+
+	<div>
+		<div>
+			<button class="template-btn">Template</button>
+		</div>
+		<div>
+			<label class="upload">Upload
+				<input type="file" class="image-input" accept=".jpg, .jpeg, .png">
+			</label>
+		</div>
+		<div>
+			<div><button class="text-btn">Text</button></div>
+		</div>
+	</div>
+
+	<!-- Meme Box -->
+	<div class="meme-frame">
+		<canvas class="output"></canvas>
+	</div>
+
+	<!-- Template Button & Pallet -->
+	<div class="template-wrapper">
+		<div class="template-pallet">
+			<h3 class="template-pallet-title">TEMPLATES</h3>
+			<button class="close-button-template"><i class="fa fa-close"></i></button>
+			<div class="template-grid">
+				<button class="memeTemplate"><img src="./image/Doge.jpg"></button>
+				<button class="memeTemplate"><img src="./image/3kwur5.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Futurama-Fry.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Is-This-A-Pigeon.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Laughing-Leo.png"></button>
+				<button class="memeTemplate"><img src="./image/X-X-Everywhere.jpg"></button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Text Button & Pallet -->
+	<div class="text-wrapper">
+		<div class="text-pallet">
+			<div class="text-pallet-title">ADD TEXT</div>
+			<label class="top-text">Top Text : </label>
+			<input type="text" class="top-text-input">
+			<label class="bottom-text">Bottom Text : </label>
+			<input type="text" class="bottom-text-input">
+			<button class="text-submit-btn">Submit</button>
+			<button class="close-button-text"><i class="fa fa-close"></i></button>
+		</div>
+	</div>
+	<script src="./js/script.js"></script>
+	
+</body>
+
+</html>

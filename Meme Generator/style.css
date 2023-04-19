@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.toolbar {
+    background: white;
+    padding: 5px 20px;
+    border-bottom: 1px solid rgb(173, 171, 171);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 36px;
+    margin: 5px 8px;
+    object-fit: cover;
+}
+
+.logo a {
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+.toolbar-right {
+    float: right;
+    margin-right: 15px;
+}
+
+.download-btn, .share-btn {
+    display: inline-block;
+    line-height: 35px;
+    margin: 0px 8px;
+    padding: 0px 8px;
+    background-color: #6c2bd9;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+.download-btn {
+    background: rgb(189, 186, 186);
+}
+
+.download-btn a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.share-btn a {
+    color: white;
+    font-size: 15px;
+}
+
+.download-btn:hover {
+    background-color: rgb(145, 143, 143);
+}
+
+.share-btn:hover {
+    background-color: #3c039d;
+}
+
+.meme-frame{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    align-items: center;
+    width: 450px;
+    height: 420px;
+    background-color: rgb(229, 229, 229);
+    object-fit: fill;
+    box-sizing: border-box;
+}   
+
+.output{
+    width: 450px;
+    height: 420px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.template-btn, .text-btn {
+    margin: 20px 20px 10px 20px;
+    line-height: 70px;
+    padding: 0px 10px;
+    background: rgb(189, 186, 186);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.template-btn a, .text-btn a {
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.template-btn:hover, .text-btn:hover {
+    background-color: rgb(145, 143, 143); 
+}
+
+.image-input {
+    display: none;
+    text-align: center;
+}
+
+.upload {
+    display: block;
+    width: 80px;
+    height: 70px;
+    margin: 10px 20px;
+    padding: 25px 15px;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background: rgb(189, 186, 186);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.upload:hover {
+    background-color: rgb(145, 143, 143);
+}
+
+.text-btn {
+    margin: 10px 20px;
+    line-height: 70px;
+    padding: 0 26px;
+}
+
+.text-pallet-title {
+    margin: 10px 20px 15px 20px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 1000;
+}
+
+.text-wrapper, .template-wrapper{
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background-color: white;
+}
+
+.close-button-text, .close-button-template {
+    position: relative;
+    left: 45px;
+    top: -235px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.close-button-template {
+    position: relative;
+    left: 270px;
+    top: -38px;
+}
+
+.close-button-text:hover, .close-button-template:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.text-pallet,.template-pallet{
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.template-pallet {
+    height: 500px;
+    align-content: center;
+}
+
+.template-pallet-title {
+    margin: 10px 20px 0 20px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 1000;
+}
+
+.memeTemplate {
+    border: none;
+    background-color: white;
+}
+
+.template-pallet img {
+    margin: 5px 10px 10px 10px;
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.template-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.top-text, .bottom-text {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.top-text-input,.bottom-text-input {
+    margin: 10px 20px;
+    width: 85%;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid rgb(189, 186, 186);
+    border-radius: 5px;
+    transition: height 0.4s ease-in-out;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.text-submit-btn {
+    margin: 20px 20px 15px 100px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(160, 159, 159);
+    border-radius: 5px;
+}
+
+.text-submit-btn:hover {
+    background-color: grey;
+    border: none;
+}
