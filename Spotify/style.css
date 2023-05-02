@@ -6,13 +6,19 @@
 body{
     background-color:lightcoral;
 }
+  .logo {
+      display: block;
+      height: 45px;
+      width: 45px;
+      margin-left: 0px;
+  }
 
 nav ul{
     display: flex;
     align-items: center;
     list-style: none;
     height: 65px;
-    color: white;
+    color: black;
     background-color: lightpink;
 
 }
@@ -26,7 +32,12 @@ nav ul li{
     font-weight: bold;
     font-size: 20px;
 }
-
+h1 {
+    font-size: bold;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",sans-serif;
+    text-align: center;
+    margin-left: 400px;
+}
 .brand img{
      
     width: 44px;

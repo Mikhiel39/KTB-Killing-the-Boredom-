@@ -20,11 +20,22 @@
     
       .logo {
         display: block;
-        height: 70px;
-        width: 70px;
-        margin: auto;
+        height: 45px;
+        width: 45px;
+        margin-left:0px;
       }
-    
+    nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 65px;
+    color: black;
+
+}
+/* nav ul li{
+    padding: 5px;
+} */
+
       .container {
         overflow-y: auto;
         display: block;
@@ -85,20 +96,46 @@
         font-size: bold;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
-        text-align: center;
+        margin:auto;
       }
+      .brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
     </style>
   </head>
   <body>
-    <nav>
+    <nav >
+      <ul>
+      <div>
+      <li class="brand">
+      <a href="../index.html">
       <img
         class="logo"
-        src="https://cdn.dribbble.com/users/267404/screenshots/3713416/talkup.png"
-        alt=""
+        src="../images/frame.png"
+        class="h-6 mr-3 sm:h-9" alt="KTB Logo" 
       />
+      </a>
+      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">&nbsp; KTB</span>
+      </li>
+      </div>
       <h1>Welcome To Our Chat-Room .....</h1>
+      </ul>
     </nav>
-
+    <!-- <nav>
+      <ul>
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+          <li class="brand">
+            <a href="../index.html">
+              <img src="../images/frame.png" class="h-6 mr-3 sm:h-9" alt="KTB Logo" /></a>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">KTB</span>
+          </li>
+        </div>
+        <h1>Welcome To Our Music .....</h1>
+      </ul>
+    </nav> -->
     <div class="container">
       <!-- <div class="message right">Pranav: Hey how are u ?</div>
       <div class="message left">Harry: Hey i am fine. What about u ?</div> -->

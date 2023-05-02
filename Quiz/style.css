@@ -6,8 +6,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+ .logo {
+     display: block;
+     height: 45px;
+     width: 45px;
+     margin-left: 0px;
+ }
+ .brand {
+     display: flex;
+     align-items: center;
+     font-weight: bold;
+     font-size: 20px;
+ }
 body{
     background-color: #1d31a3;
+}
+c{
+    color:white;
 }
 ::selection{
     color: #fff;
@@ -36,7 +51,9 @@ body{
     padding: 32px;
     backdrop-filter: blur(10px);
   }
-
+  nav ul {
+      color: white;
+  }
   .start_butn {
     display: inline-block;
     padding: 24px 32px;
