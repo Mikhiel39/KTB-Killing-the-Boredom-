@@ -79,7 +79,7 @@ hr {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom:70px;
   background-color: #FFF;
 }
@@ -88,7 +88,7 @@ hr {
   grid-template-columns: auto auto auto;
   background-color: #FFF;
   padding: 10px;
-  margin-top:70px;
+  margin-top:50px;
 }
 
 .grid-item {
