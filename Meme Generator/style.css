@@ -66,6 +66,7 @@ body {
 .share-btn a {
     color: white;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .download-btn:hover {
@@ -76,7 +77,118 @@ body {
     background-color: #3c039d;
 }
 
-.meme-frame{
+.share-options {
+    display: none;
+    width: 250px;
+    height: 100px;
+    padding: 15px 15px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 9%;
+    right: 2%;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.share-options a i {
+    font-size: 25px;
+}
+
+.share-options a {
+    padding: 10px;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.share-options a:hover {
+    transform: scale(1.2);
+}
+
+.share-options .fa-whatsapp {
+    color: #25d366;
+}
+
+.share-options .fa-facebook {
+    color: #1877f2;
+}
+
+.share-options .fa-pinterest {
+    color: #e60023;
+}
+
+.share-options .fa-twitter {
+    color: #1da1f2;
+}
+
+.share-options .fa-linkedin {
+    color: #0a66c2;
+}
+
+.copy-link {
+    display: flex;
+    align-items: center;
+    margin: 10px 5px;
+    padding: 7px 0;
+}
+
+.copy-content {
+    width: 180px;
+    height: 30px;
+    padding: 3px;
+    font-size: 15px;
+    border: 1.5px solid rgb(85, 83, 83);
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    overflow-x: scroll;
+}
+
+.copy-btn {
+    height: 30px;
+    padding: 3px 5px;
+    background-color: rgb(85, 83, 83);
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    background-color: black;
+}
+
+.meme-title {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 12%;
+    left: 32%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.next-btn {
+    width: 100px;
+    height: 45px;
+    padding: 6px;
+    position: absolute;
+    bottom: 1.5%;
+    left: 44%;
+    background: rgb(189, 186, 186);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.next-btn:hover {
+    background-color: rgb(145, 143, 143); 
+}
+
+.meme-frame ,.meme-img img{
     position: absolute;
     top: 20%;
     left: 30%;
@@ -86,7 +198,12 @@ body {
     background-color: rgb(229, 229, 229);
     object-fit: fill;
     box-sizing: border-box;
-}   
+    cursor: pointer;
+}
+
+.meme-img {
+    display: none;
+} 
 
 .output{
     width: 450px;
@@ -95,8 +212,16 @@ body {
     cursor: pointer;
 }
 
-.template-btn, .text-btn {
-    margin: 20px 20px 10px 20px;
+.navbar-left {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    background-color: #ffffff;
+}
+
+.template-btn, .text-btn, .meme-btn {
+    width: 80px;
+    margin: 18px 20px 10px 15px;
     line-height: 70px;
     padding: 0px 10px;
     background: rgb(189, 186, 186);
@@ -105,7 +230,7 @@ body {
     cursor: pointer;
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -116,7 +241,14 @@ body {
     font-weight: 600;
 }
 
-.template-btn:hover, .text-btn:hover {
+.text-btn, .meme-btn {
+    margin: 9px 15px;
+    line-height: 70px;
+    /* padding: 0 26px; */
+    text-align: center;
+}
+
+.template-btn:hover, .text-btn:hover, .meme-btn:hover {
     background-color: rgb(145, 143, 143); 
 }
 
@@ -126,14 +258,15 @@ body {
 }
 
 .upload {
-    display: block;
+    display: inline-block;
+    text-align: center;
     width: 80px;
     height: 70px;
-    margin: 10px 20px;
+    margin: 9px 15px;
     padding: 25px 15px;
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     background: rgb(189, 186, 186);
     border: none;
@@ -145,11 +278,6 @@ body {
     background-color: rgb(145, 143, 143);
 }
 
-.text-btn {
-    margin: 10px 20px;
-    line-height: 70px;
-    padding: 0 26px;
-}
 
 .text-pallet-title {
     margin: 10px 20px 15px 20px;
@@ -169,7 +297,7 @@ body {
 .close-button-text, .close-button-template {
     position: relative;
     left: 45px;
-    top: -235px;
+    top: -415px;
     width: 40px;
     height: 40px;
     background-color: white;
@@ -193,17 +321,14 @@ body {
 
 .text-pallet,.template-pallet{
     width: 350px;
+    height: 510px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-
-.template-pallet {
-    height: 500px;
     align-content: center;
 }
 
 .template-pallet-title {
-    margin: 10px 20px 0 20px;
+    margin: 10px 20px 0 10px;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 1000;
@@ -215,20 +340,26 @@ body {
 }
 
 .template-pallet img {
-    margin: 5px 10px 10px 10px;
+    margin: 0 10px 10px 10px;
     width: 110px;
     height: 110px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.template-grid{
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-evenly;
+::-webkit-scrollbar {
+    display: none;
 }
 
-.top-text, .bottom-text {
+.template-grid{
+    display: grid;
+    height: 400px;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+}
+
+.top-text, .bottom-text, .change-color, .change-font {
     display: block;
     margin-top: 10px;
     margin-left: 20px;
@@ -237,7 +368,7 @@ body {
     font-weight: 600;
 }
 
-.top-text-input,.bottom-text-input {
+.top-text-input,.bottom-text-input, .input-color, .input-font {
     margin: 10px 20px;
     width: 85%;
     height: 40px;

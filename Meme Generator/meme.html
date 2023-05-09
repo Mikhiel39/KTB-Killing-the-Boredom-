@@ -21,40 +21,56 @@
 		</div>
 		<ul class="toolbar-right">
 			<li class="download-btn">
-				<a href="#" class="img-download" download>Download
+				<a href="#" class="img-download" download="file-1" target="_blank">Download
 					<i class="fa fa-download"></i>
 				</a>
 			</li>
-			<!-- <li class="share-btn">
-				<a href="#">Share
+			<li class="share-btn">
+				<a>Share
 					<i class="fa fa-share-alt"></i>
-					<i class="fa fa-whatsapp"></i>
-					<i class="fa fa-facebook"></i>
-					<i class="fa fa-instagram"></i>
-					<i class="fa fa-twitter"></i>
-					<i class="fa fa-linkedin"></i>
 				</a>
-			</li> -->
+			</li>
+			<div class="share-options">
+				<a class="whatsapp-btn" target="_blank"><i class="fa fa-whatsapp"></i></a>
+				<a class="facebook-btn" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a class="pinterest-btn" target="_blank"><i class="fa fa-pinterest"></i></a>
+				<a class="twitter-btn" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a class="linkedin-btn" target="_blank"><i class="fa fa-linkedin"></i></a>
+				<div class="copy-link">
+					<span class="copy-content">https://www.example.com/</span><span class="copy-btn">copy</span>
+				</div>
+			</div>
 		</ul>
 	</nav>
 
-	<div>
+	<div class="navbar-left">
 		<div>
 			<button class="template-btn">Template</button>
 		</div>
 		<div>
-			<label class="upload">Upload
+			<label class="upload">
+				<!-- <i class="fa fa-upload"><br> -->
+					Upload
+				<!-- </i> -->
 				<input type="file" class="image-input" accept=".jpg, .jpeg, .png">
 			</label>
 		</div>
 		<div>
-			<div><button class="text-btn">Text</button></div>
+			<button class="text-btn">Text</button>
+		</div>
+		<div>
+			<button class="meme-btn">Memes</button>
 		</div>
 	</div>
 
 	<!-- Meme Box -->
 	<div class="meme-frame">
-		<canvas class="output"></canvas>
+		<canvas class="output" src=""></canvas>
+	</div>
+	<div class="meme-img">
+		<span class="meme-title">Loading...</span>
+		<img src="" alt="meme">
+		<button class="next-btn">NEXT</button>
 	</div>
 
 	<!-- Template Button & Pallet -->
@@ -69,6 +85,52 @@
 				<button class="memeTemplate"><img src="./image/Is-This-A-Pigeon.jpg"></button>
 				<button class="memeTemplate"><img src="./image/Laughing-Leo.png"></button>
 				<button class="memeTemplate"><img src="./image/X-X-Everywhere.jpg"></button>
+				<button class="memeTemplate"><img src="./image/X-X-Everywhere.jpg"></button>
+				<button class="memeTemplate"><img src="./image/65939r.jpg"></button>
+				<button class="memeTemplate"><img src="./image/A train hitting a school bus.png"></button>
+				<button class="memeTemplate"><img src="./image/Afraid-To-Ask-Andy.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Ancient-Aliens.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Anime Girl Hiding from Terminator.jpeg"></button>
+				<button class="memeTemplate"><img src="./image/Avatar guy.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Average Fan vs Average Enjoyer.png"></button>
+				<button class="memeTemplate"><img src="./image/Bernie Sanders Once Again Asking Template.png"></button>
+				<button class="memeTemplate"><img src="./image/Black guy hiding behind tree.png"></button>
+				<button class="memeTemplate"><img src="./image/Buff-Doge-vs-Cheems.png"></button>
+				<button class="memeTemplate"><img src="./image/Charlie Conspiracy.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Cute-Cat.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Disaster-Girl.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Distracted-Boyfriend.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Epic-Handshake.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Gentlemen, it is with great pleasure to inform you that.jpeg"></button>
+				<button class="memeTemplate"><img src="./image/Grandma-Finds-The-Internet.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Grant Gustin over grave.png"></button>
+				<button class="memeTemplate"><img src="./image/Gus Fring we are not the same.png"></button>
+				<button class="memeTemplate"><img src="./image/Hide-the-Pain-Harold.jpg"></button>
+				<button class="memeTemplate"><img src="./image/I-Bet-Hes-Thinking-About-Other-Women.jpg"></button>
+				<button class="memeTemplate"><img src="./image/I-Should-Buy-A-Boat-Cat.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Leonardo-Dicaprio-Cheers.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Look-At-Me.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Maury-Lie-Detector.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Mocking-Spongebob.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Mugatu-So-Hot-Right-Now.jpg"></button>
+				<button class="memeTemplate"><img src="./image/One-Does-Not-Simply.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Oprah-You-Get-A.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Pepperidge-Farm-Remembers.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Smiling-Cat.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Soldier protecting sleeping child.jpeg"></button>
+				<button class="memeTemplate"><img src="./image/Spider Man Triple.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Squidward window.jpeg"></button>
+				<button class="memeTemplate"><img src="./image/Star-Wars-Yoda.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Success-Kid.jpg"></button>
+				<button class="memeTemplate"><img src="./image/That-Would-Be-Great.jpg"></button>
+				<button class="memeTemplate"><img src="./image/the office congratulations.jpeg"></button>
+				<button class="memeTemplate"><img src="./image/The-Most-Interesting-Man-In-The-World.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Third-World-Skeptical-Kid.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Unsettled-Tom.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Waiting-Skeleton.jpg"></button>
+				<button class="memeTemplate"><img src="./image/Whisper and Goosebumps.jpeg"></button>
+				<button class="memeTemplate"><img src="./image/Yall-Got-Any-More-Of-That.jpg"></button>
+				<button class="memeTemplate"><img src="./image/You Guys are Getting Paid.png"></button>
 			</div>
 		</div>
 	</div>
@@ -76,15 +138,20 @@
 	<!-- Text Button & Pallet -->
 	<div class="text-wrapper">
 		<div class="text-pallet">
-			<div class="text-pallet-title">ADD TEXT</div>
+			<div class="text-pallet-title">EDIT TEXT</div>
 			<label class="top-text">Top Text : </label>
 			<input type="text" class="top-text-input">
 			<label class="bottom-text">Bottom Text : </label>
 			<input type="text" class="bottom-text-input">
-			<button class="text-submit-btn">Submit</button>
+			<label class="change-color">Color : </label>
+			<input type="text" class="input-color">
+			<label class="change-font">Font Size : </label>
+			<input type="text" class="input-font">
+			<button class="text-submit-btn">ADD</button>
 			<button class="close-button-text"><i class="fa fa-close"></i></button>
 		</div>
 	</div>
+
 	<script src="./js/script.js"></script>
 	
 </body>
