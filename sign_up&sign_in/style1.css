@@ -71,7 +71,9 @@
     margin-left: 10px;
     margin-top: 10px;
 }
-
+.title{
+    color: #fff;
+}
 .title-btns {
     width: 328px;
     height: 48px;
